@@ -328,7 +328,10 @@ function createTable(members) {
 
     if (tbody.rows.length == 0) {
         var row = document.createElement("tr");
-        row.append("Sorry, there are no members with this search criteria");
+        var cell = document.createElement("td");
+        cell.setAttribute('colspan', 5);
+        cell.append("Sorry, there are no members with this search criteria");
+        row.append(cell);
         tbody.append(row);
     }
 }
