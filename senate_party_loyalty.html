@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css_style/bootstrap.css">
+    <title>Senate Loyalty</title>
+</head>
+
+<body class="container">
+    <!-- <div>
+        <img src="css_style/d02e72e8-3e58-4e00-a11d-a05ed9e865c6.png"><a href="#"></a>
+    </div> -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+               <img src="css_style/TGIF_logo.png"><a href="#"></a>
+            </div>
+               <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="index-starter-page.html">Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congres 113<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="senate-starter-page.html">Senate</a></li>
+                            <li><a href="house-starter-page.html">House</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="senate_attendance.html">Senate</a></li>
+                            <li><a href="house_attendance.html">House</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="senate_party_loyalty.html">Senate</a></li>
+                            <li><a href="house_party_loyalty.html">House</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="mailto:info@gtif.com"><span class="glyphicon glyphicon-envelope"></span> Send Mail</a></li>
+                    <!--html>li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li><html-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+        <div>
+        </div>
+    </header>
+    <!--Table container-->
+    <div class="row">
+        <div class="col-sm-6 text-justify">
+            <h2>Party Loyalty</h2>
+            <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda. </p>
+        </div>
+        <div class="col-sm-5">
+            <h3 class="text-center" id="test">Senate at a glance</h3>
+            <table class="table table-striped">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Party</th>
+                        <th>Number of Reps</th>
+                        <th>% Voted with Prty</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+
+                </tbody>
+            </table>
+            <div class="spin">
+    <div class="lds-spinner" id="spinner1">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="text-center">Least Loyal (Bottom 10% of Party)</h3>
+            <table class="table table-striped">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Name</th>
+                        <th>Number Party Votes</th>
+                        <th>% Party Votes</th>
+                    </tr>
+                </thead>
+                <tbody id="table_bottom">
+
+                </tbody>
+            </table>
+            <div class="spin">
+    <div class="lds-spinner" id="spinner2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</div>
+        </div>
+        <div class="col-md-6">
+            <h3 class="text-center">Most Loyal (Top 10% of Party)</h3>
+            <table class="table table-striped">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Name</th>
+                        <th>Number Party Votes</th>
+                        <th>% Party Votes</th>
+                    </tr>
+                </thead>
+                <tbody id="table_top">
+
+                </tbody>
+            </table>
+            <div class="spin">
+    <div class="lds-spinner" id="spinner3">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</div>
+
+        </div>
+    </div>
+     <footer>
+
+        <div class="container">
+            <div class="body_of_footer">
+                <p class="text-center">© 2016 TGIF | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!--
+    <script src="js/pro-congress-113-senate%202.js"></script>
+    <script src="js/statistics_party_loyalty.js"></script>
+-->
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

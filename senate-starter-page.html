@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css_style/bootstrap.css">
+    <title>Senate</title>
+
+</head>
+
+<body class="container">
+    <!-- <div>
+        <img src="css_style/d02e72e8-3e58-4e00-a11d-a05ed9e865c6.png"><a href="#"></a>
+    </div> -->
+    <nav class="navbar navbar-inverse">
+       <div class="container-fluid">
+        <div class="navbar-header">
+               <img src="css_style/TGIF_logo.png"><a href="#"></a>
+            </div>
+               <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="index-starter-page.html">Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congres 113<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="senate-starter-page.html">Senate</a></li>
+                            <li><a href="house-starter-page.html">House</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="senate_attendance.html">Senate</a></li>
+                            <li><a href="house_attendance.html">House</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="senate_party_loyalty.html">Senate</a></li>
+                            <li><a href="house_party_loyalty.html">House</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="mailto:info@gtif.com"><span class="glyphicon glyphicon-envelope"></span> Send Mail</a></li>
+                    <!--html>li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li><html-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Table container-->
+    <div class="row">
+        <div class="col-sm-6 text-justify">
+            <h2>Senators</h2>
+            <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <p class="section-filter">Filter by Party:</p>
+                <div id="party-filter" class="party-checkbox">
+                    <label class="checkbox-inline"><input id="rep" type="checkbox" name="party" value="republican">Republican</label>
+                    <label class="checkbox-inline"><input id="dem" type="checkbox" name="party" value="democrat">Democrat</label>
+                    <label class="checkbox-inline"><input id="ind" type="checkbox" name="party" value="independent">Independent</label>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <p class="section-filter">Filter by State:</p>
+                <select id="state-filter" class="filter">
+                    <option value="All">All</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th>Full Name</th>
+                <th>Party</th>
+                <th>State</th>
+                <th>Years of Office</th>
+                <th>&#37; Votes w&#47Party</th>
+            </tr>
+        </thead>
+        <tbody id="senate-house-data">
+        
+        </tbody>
+       
+       
+        
+    </table>
+    <div class="spin">
+             <div class="lds-spinner" id="spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div> </div>
+            
+        </div>
+    <footer>
+
+        <div class="container">
+            <div class="body_of_footer">
+                <p class="text-center">© 2016 TGIF | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+<!--
+    <script src="js/pro-congress-113-senate.js"></script>
+    <script src="js/main_senate.js"></script>
+-->
+    <script src="js/main.js"></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
