@@ -113,6 +113,10 @@ table{
     width: 250px;
 }
 
+.centeredMessage{
+  text-align: center;
+}
+
 
 footer{
     background-color: #826028;

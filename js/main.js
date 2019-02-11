@@ -330,6 +330,7 @@ function createTable(members) {
         var row = document.createElement("tr");
         var cell = document.createElement("td");
         cell.setAttribute('colspan', 5);
+        cell.setAttribute("class", "centeredMessage");
         cell.append("Sorry, there are no members with this search criteria");
         row.append(cell);
         tbody.append(row);
